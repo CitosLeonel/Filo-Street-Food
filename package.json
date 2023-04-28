@@ -1,11 +1,25 @@
 {
   "name": "mi_repositorio",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/prueba.scss css/pruebacss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CitosLeonel/mi_repositorio.git"
+  },
+  "author": "Leonel Martín",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/CitosLeonel/mi_repositorio/issues"
+  },
+  "homepage": "https://github.com/CitosLeonel/mi_repositorio#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
 }
