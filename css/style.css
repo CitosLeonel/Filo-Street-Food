@@ -91,44 +91,23 @@
 }
 
 /*Página Menú*/
-.nuestra__carta {
+.nuestra-carta {
     padding: 20px;
 }
 
-.nuestra__carta h1 {
+.nuestra-carta h1 {
     font-family: 'Roboto Mono', monospace;
     font-size: 40px;
     color: #ffffff;
     font-weight: bold;
 }
 
-.felx__conteiner-menu {
-    display: flex;
-    padding: 30px;
-    margin: auto;
-    flex-wrap: wrap;
-    align-items: stretch;
-}
-
-.felx__item-menu {
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-    align-items: stretch;
-}
-
-.felx__item-menu img {
-    border: 8px solid #302a2a;
-    width: 100%;
-
-}
-
 /*Página Nosotros*/
-.sobre__nos {
+.sobre-nos {
     padding: 20px;
 }
 
-.sobre__nos h1 {
+.sobre-nos h1 {
     font-family: 'Roboto Mono', monospace;
     font-size: 40px;
     color: #ffffff;
@@ -140,14 +119,14 @@
     margin-top: 50px;
 }
 
-.sobre__nos-h2 {
+.sobre-nos-h2 {
     font-family: 'Roboto Mono', monospace;
     font-size: 25px;
     color: #ffffff;
     padding: 20px;
 }
 
-.felx__conteiner-nos {
+.felx-conteiner-nos {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -155,23 +134,23 @@
     align-items: stretch;
 }
 
-.felx__item {
+.felx-item {
     justify-content: space-between;
 }
 
-.felx__item-img {
+.felx-item-img {
     padding: 25px;
     text-align: center;
 }
 
-.felx__item-img img {
+.felx-item-img img {
     width: 60%;
     border: 8px solid #302a2a ;
     text-align: center;
     
 }
 
-.sobre__nos-text {
+.sobre-nos-text {
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
     color: #ffffff;
@@ -181,55 +160,44 @@
 }
 
 /*Página Vauchers*/
-
 .vauchers {
     padding: 20px;
-
 }
-
 .vauchers h1 {
     font-family: 'Roboto Mono', monospace;
     font-size: 40px;
     color: #ffffff;
     font-weight: bold;
 }
-
 .col {
     padding: 40px 40px;
     border-radius: 20%;
     transition: transform .5s;
 }
-
 .col:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
-
 .card-body {
     background-color: #302a2a;
 }
-
 .card-title {
     font-family: 'Roboto Mono', monospace;
     font-weight: bolder;
     color: #ffffff;
 }
-
 .card-text {
     font-family: 'Roboto Mono', monospace;
     color: #ffffff;
 }
-
 .text-muted {
     font-family: 'Roboto Mono', monospace;
     color: #0a0a0a;
 }
 
 /*Página Contacto*/
-
 .contacto {
     padding: 20px;
 }
-
 .contacto h1 {
     font-family: 'Roboto Mono', monospace;
     font-size: 40px;
@@ -237,29 +205,25 @@
     font-weight: bold;
 }
 
-.datos__contacto {
+.datos-contacto {
     padding: 20px;
 }
-
-.datos__contacto p {
+.datos-contacto p {
     font-family: 'Roboto Mono', monospace;
     color: #ffffff;
     margin-left: 40px;
 }
-
-.datos__contacto a {
+.datos-contacto a {
     color: #ffffff;
 }
-.datos__contacto a:hover {
+.datos-contacto a:hover {
     color: #bbb;
 }
-
 
 .subtitulo {
     padding: 10px;
     margin: auto;
 }
-
 .subtitulo h2 {
     font-family: 'Roboto Mono', monospace;
     font-size: 35px;
@@ -278,35 +242,30 @@
     margin: 40px 40px;
     border: 8px solid #bbb;
 }
-
 .form {
     min-width: 300px;
     flex: 1;
     text-align: center;
     padding: 30px;
 }
-
-.form__input {
+.form-input {
     width: 100%;
     padding: 7px;
     margin: 6px 0;
     border: none;
     font-family: 'Roboto Mono', monospace;
 }
-
 .form textarea {
     min-height: 140px;
     resize: none;
     font-family: 'Roboto Mono', monospace;
 }
-
-.form__img {
+.form-img {
     flex: 1;
     padding: 20px;
     min-width: 300px;
 }
-
-.form__img img {
+.form-img img {
     width: 100%;
     border-radius: 5%;
 }
@@ -315,7 +274,6 @@
     padding: 20px;
     margin: 20px;
 }
-
 .ubicacion h5 {
     
     color: #ffffff;
@@ -332,7 +290,6 @@
     position: relative;
     height: 0;
 }
-
 .map__responsive iframe {
     flex: 1;
     left: 0;
@@ -347,7 +304,6 @@
     margin: 20px;
     padding: 20px;
 }
-
 .horarios h4 {
 
     color: #ffffff;
@@ -356,7 +312,6 @@
     text-decoration: underline;
     font-weight: lighter;
 }
-
 .horarios {
     
     font-family: 'Roboto Mono', monospace;
@@ -365,7 +320,6 @@
 }
 
 /*pie de pagina*/
-
 .footer-conteiner {
     display: flex;
     flex-direction: row;
