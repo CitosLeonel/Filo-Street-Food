@@ -1,7 +1,8 @@
-
+.body {
+    background-color: #0a0a0a;
+}
 
 /*Barra de Navegacion*/
-
 .nav {
     background-color: #302a2a;
     padding: 10px;
@@ -33,6 +34,7 @@
 
 /*Página principal*/
 .titulo-bienvenida {
+    background-color: #0a0a0a;
     color: #ffffff;
     align-items: center;
     display: flexbox;
@@ -48,10 +50,11 @@
 
 .animate__animated.animate__backInDown {
     animation-delay: 0.5s;
-    animation-duration: 3s;
+    animation-duration: 1s;
 }
 
 .logo-bienvenida {
+    background-color: #0a0a0a;
     display: flex;
     justify-content: center;
     padding: 20px;
