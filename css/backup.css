@@ -1,5 +1,5 @@
 body {
-  background-color: #0a0a0a;
+    background-color: #0a0a0a;
 }
 
 /*Barra de Navegacion*/
@@ -148,9 +148,9 @@ body {
 
 .felx-item-img img {
     width: 60%;
-    border: 8px solid #302a2a ;
+    border: 8px solid #302a2a;
     text-align: center;
-    
+
 }
 
 .sobre-nos-text {
@@ -166,32 +166,39 @@ body {
 .vauchers {
     padding: 20px;
 }
+
 .vauchers h1 {
     font-family: 'Roboto Mono', monospace;
     font-size: 40px;
     color: #ffffff;
     font-weight: bold;
 }
+
 .col {
     padding: 40px 40px;
     border-radius: 20%;
     transition: transform .5s;
 }
+
 .col:hover {
     transform: scale(1.05);
 }
+
 .card-body {
     background-color: #302a2a;
 }
+
 .card-title {
     font-family: 'Roboto Mono', monospace;
     font-weight: bolder;
     color: #ffffff;
 }
+
 .card-text {
     font-family: 'Roboto Mono', monospace;
     color: #ffffff;
 }
+
 .text-muted {
     font-family: 'Roboto Mono', monospace;
     color: #0a0a0a;
@@ -201,6 +208,7 @@ body {
 .contacto {
     padding: 20px;
 }
+
 .contacto h1 {
     font-family: 'Roboto Mono', monospace;
     font-size: 40px;
@@ -211,14 +219,17 @@ body {
 .datos-contacto {
     padding: 20px;
 }
+
 .datos-contacto p {
     font-family: 'Roboto Mono', monospace;
     color: #ffffff;
     margin-left: 40px;
 }
+
 .datos-contacto a {
     color: #ffffff;
 }
+
 .datos-contacto a:hover {
     color: #bbb;
 }
@@ -227,6 +238,7 @@ body {
     padding: 10px;
     margin: auto;
 }
+
 .subtitulo h2 {
     font-family: 'Roboto Mono', monospace;
     font-size: 35px;
@@ -245,12 +257,14 @@ body {
     margin: 40px 40px;
     border: 8px solid #bbb;
 }
+
 .form {
     min-width: 300px;
     flex: 1;
     text-align: center;
     padding: 30px;
 }
+
 .form-input {
     width: 100%;
     padding: 7px;
@@ -258,17 +272,112 @@ body {
     border: none;
     font-family: 'Roboto Mono', monospace;
 }
+
 .form textarea {
     min-height: 140px;
     resize: none;
     font-family: 'Roboto Mono', monospace;
 }
+
 .form-img {
     flex: 1;
     padding: 20px;
     min-width: 300px;
 }
+
 .form-img img {
     width: 100%;
     border-radius: 5%;
+}
+
+.ubicacion {
+    padding: 20px;
+    margin: 20px;
+}
+
+.ubicacion h5 {
+    color: #ffffff;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30;
+    text-decoration: underline;
+    font-weight: lighter;
+}
+
+.map__responsive {
+    margin: 25px;
+    overflow: hidden;
+    padding-bottom: 20%;
+    position: relative;
+    height: 0;
+}
+
+.map__responsive iframe {
+    flex: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+}
+
+.horarios-conteiner {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+}
+
+.horarios h4 {
+    color: #ffffff;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30;
+    text-decoration: underline;
+    font-weight: lighter;
+}
+
+.horarios {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+/*pie de pagina*/
+
+.footer-conteiner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #302a2a;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.footer-img {
+    margin: 8px 10px;
+    padding: 10px;
+}
+
+.footer-img img {
+    width: 50px;
+    padding: 4px;
+}
+
+.footer-table {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    align-items: center;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.footer-table tr th {
+    text-decoration: underline;
+}
+
+.copyright {
+    padding: 10px;
+    font-size: 10px;
+    text-align: right;
+    color: #ffffff;
+    justify-content: end;
 }
