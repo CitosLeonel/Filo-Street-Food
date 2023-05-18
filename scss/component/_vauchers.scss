@@ -1,0 +1,41 @@
+
+.vauchers {
+    padding: 20px;
+    
+    h1 {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 40px;
+        color: #ffffff;
+        font-weight: bold;
+    }
+}
+
+.col {
+    padding: 40px 40px;
+    border-radius: 20%;
+    transition: transform .5s;
+}
+
+.col:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    background-color: #302a2a;
+}
+
+.card-title {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.card-text {
+    font-family: 'Roboto Mono', monospace;
+    color: #ffffff;
+}
+
+.text-muted {
+    font-family: 'Roboto Mono', monospace;
+    color: #0a0a0a;
+}
