@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  overflow-x: hidden;
+}
+
 main {
   background-color: #0a0a0a;
 }
@@ -200,12 +204,24 @@ main {
   font-weight: bold;
 }
 
-.col .card {
-  margin: 0 10px;
+.col {
+  margin-bottom: 20px;
 }
 
-.card h-100 custom-card {
+.col .card {
+  margin: 0 15px;
+}
+
+.card-body {
   background-color: #302a2a;
+}
+
+.card-title {
+  color: #ffffff;
+}
+
+.card-text {
+  color: #ffffff;
 }
 
 /* Titulo de bienvenida home */
