@@ -6,6 +6,43 @@ body {
 @import "base/listas";
 @import "component/navbar";
 @import "component/footer";
+@import "component/galeria";
 
 
+/* Titulo de bienvenida home */
+.titulo-conteiner {
+    background-color: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .titulo-bienvenida h1 {
+    font-size: 48px;
+    font-family: 'Bevan', cursive;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .animate__animated.animate__backInDown {
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+  }
+  
+  .logo-bienvenida {
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .logo-bienvenida-img {
+    width: 400px;
+    height: auto;
+  }
 
+
+  

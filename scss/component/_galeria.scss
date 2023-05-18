@@ -1,0 +1,35 @@
+/* GALERIA DE IMAGENES EN CARRUSEL */
+
+.galeria {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    background-color: #0a0a0a;
+}
+
+.galeria h2 {
+    padding: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.carousel-inner {
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: #0a0a0a;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item img {
+    max-width: 50%;
+    max-height: 40%;
+}
