@@ -79,6 +79,17 @@ body {
   transform: translateY(0) rotate(-45deg);
 }
 
+@media screen and (max-width: 768px) {
+  .nav-ul {
+    display: none;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .nav-toggle.active + .nav-ul {
+    display: block;
+  }
+}
 /* Estilos base */
 .footer-container {
   display: flex;
