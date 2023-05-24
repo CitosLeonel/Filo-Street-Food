@@ -1,6 +1,7 @@
 body {
     overflow-x: hidden;
-  }
+    background-color: #0a0a0a;
+}
 
 main {
     background-color: #0a0a0a;
@@ -21,35 +22,35 @@ main {
     align-items: center;
     text-align: center;
     padding: 40px;
-  }
-  
-  .titulo-bienvenida h1 {
+}
+
+.titulo-bienvenida h1 {
     font-size: 48px;
     font-family: 'Bevan', cursive;
     color: #fff;
     margin-bottom: 20px;
-  }
-  
-  .animate__animated.animate__backInDown {
+}
+
+.animate__animated.animate__backInDown {
     animation-delay: 0.5s;
     animation-duration: 1s;
-  }
-  
-  .logo-bienvenida {
+}
+
+.logo-bienvenida {
     background-color: #0a0a0a;
     display: flex;
     justify-content: center;
     padding: 20px;
     margin-bottom: 40px;
-  }
-  
-  .logo-bienvenida-img {
+}
+
+.logo-bienvenida-img {
     width: 400px;
     height: auto;
-  }
+}
 
 
-  /*Página Nosotros*/
+/*Página Nosotros*/
 .sobre-nos {
     padding: 20px;
 }
@@ -242,6 +243,3 @@ main {
     font-size: 15px;
     color: #ffffff;
 }
-
-
-  
