@@ -12,6 +12,7 @@ main {
 @import "component/galeria";
 @import "component/menu";
 @import "component/vauchers";
+@import "component/nosotros";
 
 
 /* Titulo de bienvenida home */
@@ -22,18 +23,20 @@ main {
     align-items: center;
     text-align: center;
     padding: 40px;
-}
 
-.titulo-bienvenida h1 {
-    font-size: 48px;
-    font-family: 'Bevan', cursive;
-    color: #fff;
-    margin-bottom: 20px;
-}
+    .titulo-bienvenida {
+        h1 {
+            font-size: 48px;
+            font-family: 'Bevan', cursive;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+    }
 
-.animate__animated.animate__backInDown {
-    animation-delay: 0.5s;
-    animation-duration: 1s;
+    .animate__animated.animate__backInDown {
+        animation-delay: 0.5s;
+        animation-duration: 1s;
+    }
 }
 
 .logo-bienvenida {
@@ -42,64 +45,11 @@ main {
     justify-content: center;
     padding: 20px;
     margin-bottom: 40px;
-}
 
-.logo-bienvenida-img {
-    width: 400px;
-    height: auto;
-}
-
-
-/*Página Nosotros*/
-.sobre-nos {
-    padding: 20px;
-}
-
-.sobre-nos h1 {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 40px;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-.sobre-nos-h2 {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 25px;
-    color: #ffffff;
-    padding: 20px;
-}
-
-.felx-conteiner-nos {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-}
-
-.felx-item {
-    justify-content: space-between;
-}
-
-.felx-item-img {
-    padding: 25px;
-    text-align: center;
-}
-
-.felx-item-img img {
-    width: 60%;
-    border: 8px solid #302a2a;
-    text-align: center;
-
-}
-
-.sobre-nos-text {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 18px;
-    color: #ffffff;
-    padding: 8px;
-    margin-left: 25px;
-    margin-right: 50px;
+    .logo-bienvenida-img {
+        width: 400px;
+        height: auto;
+    }
 }
 
 
@@ -238,3 +188,5 @@ main {
     font-size: 15px;
     color: #ffffff;
 }
+
+
