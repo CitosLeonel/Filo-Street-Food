@@ -2,32 +2,31 @@
 
 .nuestra-carta {
     padding: 20px;
-}
 
-.nuestra-carta h1 {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 40px;
-    color: #ffffff;
-    font-weight: bold;
+    h1 {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 40px;
+        color: #ffffff;
+        font-weight: bold;
+    }
 }
 
 .col {
     margin-bottom: 20px;
-}
 
-.col .card {
-    margin: 0 15px;
-}
+    .card {
+        margin: 0 15px;
 
-.card-body {
-    background-color: #302a2a;
-}
+        .card-body {
+            background-color: #302a2a;
 
-.card-title {
-    color: #ffffff;
-}
+            .card-title {
+                color: #ffffff;
+            }
 
-.card-text {
-
-    color: #ffffff;
+            .card-text {
+                color: #ffffff;
+            }
+        }
+    }
 }
