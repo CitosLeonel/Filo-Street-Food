@@ -74,17 +74,3 @@
 .nav-toggle.active .nav-toggle-icon:after {
   transform: translateY(0) rotate(-45deg);
 }
-
-@media screen and (max-width: 768px) {
-  .nav-ul {
-    display: none;
-  }
-
-  .nav-toggle {
-    display: block;
-  }
-
-  .nav-toggle.active+.nav-ul {
-    display: block;
-  }
-}
