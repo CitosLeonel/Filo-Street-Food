@@ -15,32 +15,38 @@ main {
   flex-wrap: wrap;
   align-items: center;
 }
-.nav .nav-ul {
+
+.nav-ul {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.nav .nav-ul .nav-li {
+
+.nav-li {
   padding: 10px;
 }
-.nav .nav-ul .nav-li a {
+
+.nav-li a {
   font-family: "Roboto Mono", monospace;
   font-size: 20px;
   padding: 16px;
   color: #ffffff;
   text-decoration: none;
 }
-.nav .nav-ul .nav-li a:hover {
+
+.nav-li a:hover {
   color: #bbb;
 }
-.nav .nav-toggle {
+
+.nav-toggle {
   display: none;
   background: none;
   border: none;
   cursor: pointer;
 }
-.nav .nav-toggle .nav-toggle-icon {
+
+.nav-toggle-icon {
   display: block;
   width: 30px;
   height: 3px;
@@ -48,7 +54,9 @@ main {
   position: relative;
   transition: background-color 0.3s ease;
 }
-.nav .nav-toggle .nav-toggle-icon:before, .nav .nav-toggle .nav-toggle-icon:after {
+
+.nav-toggle-icon:before,
+.nav-toggle-icon:after {
   content: "";
   width: 30px;
   height: 3px;
@@ -56,19 +64,24 @@ main {
   position: absolute;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
-.nav .nav-toggle .nav-toggle-icon:before {
+
+.nav-toggle-icon:before {
   transform: translateY(-8px);
 }
-.nav .nav-toggle .nav-toggle-icon:after {
+
+.nav-toggle-icon:after {
   transform: translateY(8px);
 }
-.nav .nav-toggle.active .nav-toggle-icon {
+
+.nav-toggle.active .nav-toggle-icon {
   background-color: transparent;
 }
-.nav .nav-toggle.active .nav-toggle-icon:before {
+
+.nav-toggle.active .nav-toggle-icon:before {
   transform: translateY(0) rotate(45deg);
 }
-.nav .nav-toggle.active .nav-toggle-icon:after {
+
+.nav-toggle.active .nav-toggle-icon:after {
   transform: translateY(0) rotate(-45deg);
 }
 
@@ -334,6 +347,7 @@ main {
 }
 
 /* Página Contacto */
+/*Página Contacto*/
 .contacto {
   padding: 20px;
 }
@@ -377,8 +391,10 @@ main {
   margin: 20px;
 }
 
-.flex-container {
+.flex-conteiner {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   background-color: #302a2a;
   margin: 40px 40px;
@@ -386,6 +402,7 @@ main {
 }
 
 .form {
+  min-width: 300px;
   flex: 1;
   text-align: center;
   padding: 30px;
@@ -396,6 +413,12 @@ main {
   padding: 7px;
   margin: 6px 0;
   border: none;
+  font-family: "Roboto Mono", monospace;
+}
+
+.form textarea {
+  min-height: 140px;
+  resize: none;
   font-family: "Roboto Mono", monospace;
 }
 
@@ -410,20 +433,15 @@ main {
   border-radius: 5%;
 }
 
-.ubicacion-container {
-  flex: 1;
+.ubicacion {
   padding: 20px;
   margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .ubicacion h5 {
   color: #ffffff;
   font-family: "Roboto Mono", monospace;
-  font-size: 30px;
+  font-size: 30;
   text-decoration: underline;
   font-weight: lighter;
 }
@@ -437,27 +455,24 @@ main {
 }
 
 .map__responsive iframe {
+  flex: 1;
   left: 0;
   top: 0;
   height: 100%;
-  width: 100%;
+  width: 50%;
   position: absolute;
 }
 
-.horarios-container {
-  flex: 1;
-  padding: 20px;
-  margin: 20px;
+.horarios-conteiner {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin: 20px;
+  padding: 20px;
 }
 
 .horarios h4 {
   color: #ffffff;
   font-family: "Roboto Mono", monospace;
-  font-size: 30px;
+  font-size: 30;
   text-decoration: underline;
   font-weight: lighter;
 }
@@ -466,15 +481,4 @@ main {
   font-family: "Roboto Mono", monospace;
   font-size: 15px;
   color: #ffffff;
-}
-
-@media screen and (min-width: 768px) {
-  .flex-container {
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .ubicacion-container,
-  .horarios-container {
-    width: 50%;
-  }
 }/*# sourceMappingURL=style.css.map */
