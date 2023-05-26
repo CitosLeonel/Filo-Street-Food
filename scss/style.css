@@ -1,0 +1,470 @@
+@charset "UTF-8";
+body {
+  overflow-x: hidden;
+  background-color: #0a0a0a;
+}
+
+main {
+  background-color: #0a0a0a;
+}
+
+.nav {
+  background-color: #302a2a;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.nav .nav-ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav .nav-ul .nav-li {
+  padding: 10px;
+}
+.nav .nav-ul .nav-li a {
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  padding: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.nav .nav-ul .nav-li a:hover {
+  color: #bbb;
+}
+.nav .nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav .nav-toggle .nav-toggle-icon {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+.nav .nav-toggle .nav-toggle-icon:before, .nav .nav-toggle .nav-toggle-icon:after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.nav .nav-toggle .nav-toggle-icon:before {
+  transform: translateY(-8px);
+}
+.nav .nav-toggle .nav-toggle-icon:after {
+  transform: translateY(8px);
+}
+.nav .nav-toggle.active .nav-toggle-icon {
+  background-color: transparent;
+}
+.nav .nav-toggle.active .nav-toggle-icon:before {
+  transform: translateY(0) rotate(45deg);
+}
+.nav .nav-toggle.active .nav-toggle-icon:after {
+  transform: translateY(0) rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .nav-ul {
+    display: none;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .nav-toggle.active + .nav-ul {
+    display: block;
+  }
+}
+/* Estilos base */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #302a2a;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-container .footer-img {
+  margin: 8px 10px;
+  padding: 10px;
+}
+.footer-container .footer-img img {
+  width: 50px;
+  padding: 4px;
+}
+.footer-container .footer-content {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.footer-container .footer-table-container {
+  flex-grow: 1;
+  text-align: center;
+}
+.footer-container .footer-table-container .footer-table {
+  display: inline-block;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  font-size: 15px;
+  color: #ffffff;
+}
+.footer-container .footer-table-container .footer-table tr th {
+  text-decoration: underline;
+}
+.footer-container .footer-content .copyright {
+  padding: 10px;
+  font-size: 10px;
+  color: #ffffff;
+  text-align: right;
+}
+
+/* Estilos responsive */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-content {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+/* GALERIA DE IMAGENES EN CARRUSEL */
+.galeria {
+  margin-top: 60px;
+  margin-bottom: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  background-color: #0a0a0a;
+}
+
+.galeria h2 {
+  padding: 20px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.carousel-inner {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #0a0a0a;
+  position: relative;
+}
+
+.carousel-inner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #0a0a0a;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item img {
+  max-width: 50%;
+  max-height: 40%;
+}
+
+/* Carta Menú */
+.nuestra-carta {
+  padding: 20px;
+}
+.nuestra-carta h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.col {
+  margin-bottom: 20px;
+}
+.col .card {
+  margin: 0 15px;
+}
+.col .card .card-body {
+  background-color: #302a2a;
+}
+.col .card .card-body .card-title {
+  color: #ffffff;
+}
+.col .card .card-body .card-text {
+  color: #ffffff;
+}
+.col .card:hover {
+  cursor: pointer;
+}
+
+.vauchers {
+  padding: 20px;
+}
+.vauchers h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.col {
+  padding: 40px 40px;
+  border-radius: 20%;
+  transition: transform 0.5s;
+}
+.col:hover {
+  transform: scale(1.05);
+}
+.col .card-body {
+  background-color: #302a2a;
+}
+.col .card-body .card-title {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bolder;
+  color: #ffffff;
+}
+.col .card-body .card-text {
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+}
+
+.text-muted {
+  font-family: "Roboto Mono", monospace;
+  color: #0a0a0a;
+}
+
+.sobre-nos {
+  padding: 20px;
+}
+
+.sobre-nos h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.sobre-nos-h2 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 25px;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.felx-conteiner-nos {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.felx-item {
+  justify-content: space-between;
+}
+
+.felx-item-img {
+  padding: 25px;
+  text-align: center;
+}
+
+.felx-item-img img {
+  width: 60%;
+  border: 8px solid #302a2a;
+  text-align: center;
+}
+
+.sobre-nos-text {
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 8px;
+  margin-left: 25px;
+  margin-right: 50px;
+}
+
+/* Titulo de bienvenida home */
+.titulo-conteiner {
+  background-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+.titulo-conteiner .titulo-bienvenida h1 {
+  font-size: 48px;
+  font-family: "Bevan", cursive;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.titulo-conteiner .animate__animated.animate__backInDown {
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+}
+
+.logo-bienvenida {
+  background-color: #0a0a0a;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.logo-bienvenida .logo-bienvenida-img {
+  width: 400px;
+  height: auto;
+}
+
+/*Página Contacto*/
+.contacto {
+  padding: 20px;
+}
+
+.contacto h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.datos-contacto {
+  padding: 20px;
+}
+
+.datos-contacto p {
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  margin-left: 40px;
+}
+
+.datos-contacto a {
+  color: #ffffff;
+}
+
+.datos-contacto a:hover {
+  color: #bbb;
+}
+
+.subtitulo {
+  padding: 10px;
+  margin: auto;
+}
+
+.subtitulo h2 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: lighter;
+  text-decoration: underline;
+  margin: 20px;
+}
+
+.flex-conteiner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #302a2a;
+  margin: 40px 40px;
+  border: 8px solid #bbb;
+}
+
+.form {
+  min-width: 300px;
+  flex: 1;
+  text-align: center;
+  padding: 30px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 7px;
+  margin: 6px 0;
+  border: none;
+  font-family: "Roboto Mono", monospace;
+}
+
+.form textarea {
+  min-height: 140px;
+  resize: none;
+  font-family: "Roboto Mono", monospace;
+}
+
+.form-img {
+  flex: 1;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.form-img img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.ubicacion {
+  padding: 20px;
+  margin: 20px;
+}
+
+.ubicacion h5 {
+  color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+  font-size: 30;
+  text-decoration: underline;
+  font-weight: lighter;
+}
+
+.map__responsive {
+  margin: 25px;
+  overflow: hidden;
+  padding-bottom: 20%;
+  position: relative;
+  height: 0;
+}
+
+.map__responsive iframe {
+  flex: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+}
+
+.horarios-conteiner {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+}
+
+.horarios h4 {
+  color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+  font-size: 30;
+  text-decoration: underline;
+  font-weight: lighter;
+}
+
+.horarios {
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  color: #ffffff;
+}/*# sourceMappingURL=style.css.map */
