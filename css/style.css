@@ -336,6 +336,7 @@ main {
 }
 
 /* Página Contacto */
+/*Página Contacto*/
 .contacto {
   padding: 20px;
 }
@@ -379,8 +380,10 @@ main {
   margin: 20px;
 }
 
-.flex-container {
+.flex-conteiner {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   background-color: #302a2a;
   margin: 40px 40px;
@@ -388,6 +391,7 @@ main {
 }
 
 .form {
+  min-width: 300px;
   flex: 1;
   text-align: center;
   padding: 30px;
@@ -398,6 +402,12 @@ main {
   padding: 7px;
   margin: 6px 0;
   border: none;
+  font-family: "Roboto Mono", monospace;
+}
+
+.form textarea {
+  min-height: 140px;
+  resize: none;
   font-family: "Roboto Mono", monospace;
 }
 
@@ -412,17 +422,15 @@ main {
   border-radius: 5%;
 }
 
-.ubicacion-container {
-  flex: 1;
+.ubicacion {
   padding: 20px;
   margin: 20px;
-  width: 50%;
 }
 
 .ubicacion h5 {
   color: #ffffff;
   font-family: "Roboto Mono", monospace;
-  font-size: 30px;
+  font-size: 30;
   text-decoration: underline;
   font-weight: lighter;
 }
@@ -436,24 +444,24 @@ main {
 }
 
 .map__responsive iframe {
+  flex: 1;
   left: 0;
   top: 0;
   height: 100%;
-  width: 100%;
+  width: 50%;
   position: absolute;
 }
 
-.horarios-container {
-  flex: 1;
-  padding: 20px;
+.horarios-conteiner {
+  display: flex;
   margin: 20px;
-  width: 50%;
+  padding: 20px;
 }
 
 .horarios h4 {
   color: #ffffff;
   font-family: "Roboto Mono", monospace;
-  font-size: 30px;
+  font-size: 30;
   text-decoration: underline;
   font-weight: lighter;
 }

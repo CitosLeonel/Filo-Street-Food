@@ -53,132 +53,138 @@ main {
 }
 
 /* Página Contacto */
+/*Página Contacto*/
 .contacto {
     padding: 20px;
-  }
-  
-  .contacto h1 {
+}
+
+.contacto h1 {
     font-family: 'Roboto Mono', monospace;
     font-size: 40px;
     color: #ffffff;
     font-weight: bold;
-  }
-  
-  .datos-contacto {
+}
+
+.datos-contacto {
     padding: 20px;
-  }
-  
-  .datos-contacto p {
+}
+
+.datos-contacto p {
     font-family: 'Roboto Mono', monospace;
     color: #ffffff;
     margin-left: 40px;
-  }
-  
-  .datos-contacto a {
+}
+
+.datos-contacto a {
     color: #ffffff;
-  }
-  
-  .datos-contacto a:hover {
+}
+
+.datos-contacto a:hover {
     color: #bbb;
-  }
-  
-  .subtitulo {
+}
+
+.subtitulo {
     padding: 10px;
     margin: auto;
-  }
-  
-  .subtitulo h2 {
+}
+
+.subtitulo h2 {
     font-family: 'Roboto Mono', monospace;
     font-size: 35px;
     color: #ffffff;
     font-weight: lighter;
     text-decoration: underline;
     margin: 20px;
-  }
-  
-  .flex-container {
+}
+
+.flex-conteiner {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: #302a2a;
     margin: 40px 40px;
     border: 8px solid #bbb;
-  }
-  
-  .form {
+}
+
+.form {
+    min-width: 300px;
     flex: 1;
     text-align: center;
     padding: 30px;
-  }
-  
-  .form-input {
+}
+
+.form-input {
     width: 100%;
     padding: 7px;
     margin: 6px 0;
     border: none;
     font-family: 'Roboto Mono', monospace;
-  }
-  
-  .form-img {
+}
+
+.form textarea {
+    min-height: 140px;
+    resize: none;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.form-img {
     flex: 1;
     padding: 20px;
     min-width: 300px;
-  }
-  
-  .form-img img {
+}
+
+.form-img img {
     width: 100%;
     border-radius: 5%;
-  }
-  
-  .ubicacion-container {
-    flex: 1;
+}
+
+.ubicacion {
     padding: 20px;
     margin: 20px;
-    width: 50%;
-  }
-  
-  .ubicacion h5 {
+}
+
+.ubicacion h5 {
     color: #ffffff;
     font-family: 'Roboto Mono', monospace;
-    font-size: 30px;
+    font-size: 30;
     text-decoration: underline;
     font-weight: lighter;
-  }
-  
-  .map__responsive {
+}
+
+.map__responsive {
     margin: 25px;
     overflow: hidden;
     padding-bottom: 20%;
     position: relative;
     height: 0;
-  }
-  
-  .map__responsive iframe {
+}
+
+.map__responsive iframe {
+    flex: 1;
     left: 0;
     top: 0;
     height: 100%;
-    width: 100%;
-    position: absolute;
-  }
-  
-  .horarios-container {
-    flex: 1;
-    padding: 20px;
-    margin: 20px;
     width: 50%;
-  }
-  
-  .horarios h4 {
+    position: absolute;
+}
+
+.horarios-conteiner {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+}
+
+.horarios h4 {
     color: #ffffff;
     font-family: 'Roboto Mono', monospace;
-    font-size: 30px;
+    font-size: 30;
     text-decoration: underline;
     font-weight: lighter;
-  }
-  
-  .horarios {
+}
+
+.horarios {
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
     color: #ffffff;
-  }
-  
-  
+}
