@@ -15,32 +15,38 @@ main {
   flex-wrap: wrap;
   align-items: center;
 }
-.nav .nav-ul {
+
+.nav-ul {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.nav .nav-ul .nav-li {
+
+.nav-li {
   padding: 10px;
 }
-.nav .nav-ul .nav-li a {
+
+.nav-li a {
   font-family: "Roboto Mono", monospace;
   font-size: 20px;
   padding: 16px;
   color: #ffffff;
   text-decoration: none;
 }
-.nav .nav-ul .nav-li a:hover {
+
+.nav-li a:hover {
   color: #bbb;
 }
-.nav .nav-toggle {
+
+.nav-toggle {
   display: none;
   background: none;
   border: none;
   cursor: pointer;
 }
-.nav .nav-toggle .nav-toggle-icon {
+
+.nav-toggle-icon {
   display: block;
   width: 30px;
   height: 3px;
@@ -48,7 +54,9 @@ main {
   position: relative;
   transition: background-color 0.3s ease;
 }
-.nav .nav-toggle .nav-toggle-icon:before, .nav .nav-toggle .nav-toggle-icon:after {
+
+.nav-toggle-icon:before,
+.nav-toggle-icon:after {
   content: "";
   width: 30px;
   height: 3px;
@@ -56,19 +64,24 @@ main {
   position: absolute;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
-.nav .nav-toggle .nav-toggle-icon:before {
+
+.nav-toggle-icon:before {
   transform: translateY(-8px);
 }
-.nav .nav-toggle .nav-toggle-icon:after {
+
+.nav-toggle-icon:after {
   transform: translateY(8px);
 }
-.nav .nav-toggle.active .nav-toggle-icon {
+
+.nav-toggle.active .nav-toggle-icon {
   background-color: transparent;
 }
-.nav .nav-toggle.active .nav-toggle-icon:before {
+
+.nav-toggle.active .nav-toggle-icon:before {
   transform: translateY(0) rotate(45deg);
 }
-.nav .nav-toggle.active .nav-toggle-icon:after {
+
+.nav-toggle.active .nav-toggle-icon:after {
   transform: translateY(0) rotate(-45deg);
 }
 
